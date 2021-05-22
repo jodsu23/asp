@@ -1,3 +1,4 @@
+<% option explicit %>
 <html>
 <head>
 	<title>Problema</title>
@@ -9,6 +10,8 @@
 	<br>
 
 	<%
+		dim fecha, dia
+	
 		fecha = date()
 		dia = day(fecha)
 		
@@ -20,12 +23,12 @@
 	
 	%>
 
-
-	<br>
+	<br><br>
 	
 	<% response.write("Tipos de Variables") %>
 	
 	<%
+		dim edad, pi, nombre, fechahoy, existe
 		edad 	= 22
 		pi		= 3.1416
 		nombre	= "Canela"
@@ -55,6 +58,20 @@
 		response.write("Variable logica: ")
 		response.write(existe)
 		
+	
+	%>
+	
+	<br>
+	
+	<%  
+		dim variable1, variable2, variable3, variable4
+		variable1 = 5
+		variable2 = 10
+		variable3 = 15
+		variable4 = variable1 + variable2 + variable3
+		
+		response.write("La sumatoria de las 3 variables es: ")
+		response.write(variable4)
 	
 	%>
 	
